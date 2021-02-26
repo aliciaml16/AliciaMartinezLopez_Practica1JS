@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>Práctica 1 - JavaScript</title>
+
+        <!--Enlazamos los archivos js y css al archivo html-->
+        <script src='js/main.js' async></script>
+        <link href='css/style.css' rel='stylesheet' type='text/css'>
+
+        <!--Importamos las fuentes desde Google Fonts-->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+            <h2>Práctica 1 - JavaScript</h2>
+        </header>
+        <main>
+            <!--Realizamos una pequeña introducción al funcionamiento de la web-->
+            <h1>¡Descubre si la letra de tu DNI es correcta!</h1>
+            <br/>
+            <p>¿Sabías que la letra de tu DNI no se asigna de manera aleatoria? <br/>De acuerdo con la web del Ministerio del Interior el algoritmo es simple:<br>
+            <i>Simplemente debes dividir tu número del DNI entre 23, y el resto indicará qué letra se le asigna a partir de una tabla de valores.</i><br/><br/>
+            ¡Pero no te preocupes! En esta web te lo calculamos nosotros mismos para que notengas que pensar.</p>
+            <br/>
+
+            <!--Preparamos el formulario en el que se introducirán los datos-->
+            <form>
+                <label for="numero_dni">Introduce tu número del DNI:</label><br>
+                <input type='text' id='numero_dni' name='numero_dni' placeholder="Número del DNI"><br>
+                <label for="letra_dni">Introduce tu letra del DNI:</label><br>
+                <input type='text' id='letra_dni' name='letra_dni' placeholder="Letra del DNI"><br>
+                <input type='button' value='Comprobar' id='submit_dni'>
+            </form>
+            <br>
+            <br>
+            <h1 id="resultado"></h1>
+            <br>
+            <p id="coincide"></p>
+
+            <input type='button' value='Reintentar' id='reintentar'>
+        </main>
+        <footer>
+            <h5>Alicia Martínez López - 2021<br/>Desarrollo Full-Stack (GR1)</h5>
+        </footer>
+    </body>
+</html>

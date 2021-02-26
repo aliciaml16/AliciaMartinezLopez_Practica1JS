@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    background-color: rgba(0, 106, 142, 0.2);
+}
+
+header, footer{
+    background-color: rgb(0, 106, 142);
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header{
+    margin-bottom: 40px;
+}
+
+footer{
+    margin-top: 40px;
+}
+
+main {
+    border: 2px solid rgb(0, 106, 142);
+    border-radius: 5px;
+    padding: 30px;
+    width: 50%;
+    margin: auto;
+    text-align: center;
+
+    position: relative;
+}
+
+main h1 {
+    color: rgb(0, 106, 142);
+    font-weight: 900;
+}
+
+main p {
+    font-size: 16px;
+    line-height: 20px;
+}
+
+main p i {
+    color: rgb(0, 106, 142);
+}
+
+main form {
+    font-size: 16px;
+    color: rgb(0, 106, 142);
+}
+
+main form input{
+    border: 2px solid rgb(0, 106, 142);
+    border-radius: 5px;
+    width: 50%;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    font-size: 14px;
+    font-family: 'Karla', sans-serif;
+}
+
+main form #submit_dni, main #reintentar{
+    border: 2px solid rgb(0, 106, 142);
+    background-color: rgb(0, 106, 142);
+    border-radius: 5px;
+    color: white;
+    width: 25%;
+    height: 50px;
+    font-family: 'Karla', sans-serif;
+    transition: all 0.2s;
+}
+
+main #reintentar{
+    width: 10%;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+}
+
+main form #submit_dni:hover, main #reintentar:hover{
+    background-color: rgba(0, 107, 142, 0.5);
+    transition: all 0.2s;
+    cursor: pointer;
+}
