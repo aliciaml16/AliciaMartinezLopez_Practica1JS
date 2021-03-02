@@ -6,7 +6,9 @@ var letra_dni = document.getElementById("letra_dni");
 var submit_dni = document.getElementById("submit_dni");
 var reintentar = document.getElementById("reintentar");
 
+//Añadimos los arrays con las letras establecidas tanto en mayúsuclas como en minúsculas
 var letraNumero = ["T","R","W","A","G","M","Y","F","P","D","X","B","N","J","Z","S","Q","V","H","L","C","K","E"];
+var letraNumeroMinuscula = ["t","r","w","a","g","m","y","f","p","d","x","b","n","j","z","s","q","v","h","l","c","k","e"];
 
 //Creamos una función que se ejecutará al pulsar el botón
 submit_dni.onclick = function(){
@@ -93,7 +95,7 @@ function calcularLetra() {
 
     for(var i = 0; i < letraNumero.length; i++){ //Revisamos todas las posiciones del array
         if(i==resultado_obtenido){ //Si la posición del array coincide con el obtenido...
-            if (letraNumero[i]==letra_obtenida) {//... y si el valor de la letra coincide con la recibida...
+            if (letraNumero[i]==letra_obtenida || letraNumeroMinuscula[i]==letra_obtenida) {//... y si el valor de la letra coincide con la recibida...
                 H1_resultado.innerHTML = "La letra que encaja con tu número es " + letraNumero[i];
                 p_resultado.innerHTML = "¡Coincide con la obtenida!";
                 p_resultado.style.color = "green";
